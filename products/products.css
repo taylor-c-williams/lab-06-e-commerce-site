@@ -1,23 +1,56 @@
 body{
     font-family: 'DotGothic16', sans-serif;
 }
+
+main{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width:500px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+li {
+    list-style:none;
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 .sword{
     border:1px dotted black;
     border-radius:10px;
     padding:15px;
     font-size:1.33em;
     letter-spacing: .5px;
-    line-height: .5em;
 }
 .sword h3{
     font-family: 'Grenze Gotisch', cursive;
     font-size:2.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding:10px;
+    margin:0;
 }
 
-li {
-    list-style:none;
+.sword img{
+    height: 300px;
+    width:300px;
+}
+
+.product-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }

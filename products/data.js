@@ -21,7 +21,7 @@ export const swords = [
         id: 'highland-claymore',
         name: 'Highland Claymore',
         image: '../assets/claymore.jpg',
-        description: 'A claymore (/ˈkleɪmɔːr/; from Scottish Gaelic: claidheamh-mòr, "great sword") is characterised as having a cross hilt of forward-sloping quillons with quatrefoil terminations.',
+        description: 'A claymore (/ˈkleɪmɔːr/; from Scottish Gaelic: claidheamh-mòr, "great sword") is characterized as having a cross hilt of forward-sloping quillons with quatrefoil terminations.',
         genre: 'Single handed Greatsword',
         price: '15k gold'
     },
