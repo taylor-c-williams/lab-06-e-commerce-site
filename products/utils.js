@@ -1,49 +1,36 @@
-export const swords = [
-    {
-        id: 'katana',
-        name: 'Katana',
-        image: '../assets/katana.jpg',
-        description: 'A katana (刀 or かたな) is a Japanese sword characterized by a curved, single-edged blade with a circular or squared guard and long grip to accommodate two hands.',
-        category: 'Two handed tanto',
-        price: '10k gold'
-    },
 
-    {
-        id: 'talwar',
-        name: 'Talwar',
-        image: '../assets/talwar.jpg',
-        description: 'The talwar (pronounced [t̪əlʋaːr]), also spelled talwaar and tulwar, is a type of curved sword or sabre from the Indian subcontinent.',
-        category: 'Single handed sabre',
-        price: '15k gold'
-    },
-
-    {
-        id: 'highland-claymore',
-        name: 'Highland Claymore',
-        image: '../assets/claymore.jpg',
-        description: 'A claymore (/ˈkleɪmɔːr/; from Scottish Gaelic: claidheamh-mòr, "great sword") is characterised as having a cross hilt of forward-sloping quillons with quatrefoil terminations.',
-        category: 'Single handed Greatsword',
-        price: '15k gold'
-    },
-
-    {
-        id: 'rapier',
-        name: 'Rapier',
-        image: '../assets/rapier.jpg',
-        description: 'A rapier (/ˈreɪpiər/) or espada ropera is a type of sword with a slender and sharply-pointed two-edged blade.',
-        category: 'Single handed dueling sword',
-        price: '9k gold'
-    },
-
-    {
-        id: 'scimitar',
-        name: 'Scimitar',
-        image: '../assets/scimitar.jpg',
-        description: 'A scimitar (/ˈsɪmɪtər/ or /ˈsɪmɪtɑːr/) is a backsword with a convex curved blade',
-        category: 'Single handed dueling sword',
-        price: '9k gold'
-    }
+export function renderSword(sword) {
+    // i like to do all my creaion up front
+    const li = document.createElement('li');
+    const h3 = document.createElement('h3');
+    const img = document.createElement('img');
+    const genreP = document.createElement('p');
+    const descriptionP = document.createElement('p');
+    const priceP = document.createElement('p');
 
 
-    
-];
+    li.classList.add('sword');
+    h3.classList.add('name');
+    img.classList.add('image');
+    genreP.classList.add('genre');
+    descriptionP.classList.add('description');
+    priceP.classList.add('price');
+
+
+    h3.textContent = sword.name;
+    img.src = sword.image;
+    genreP.textContent = `Type: ${sword.genre}`;
+    descriptionP.textContent = `Description: ${sword.description}`;
+    priceP.textContent = `${sword.price}`;            
+    // i like to append last
+    // flexDiv.append(priceP, cardsP);re
+
+    li.append(
+        h3, 
+        img, 
+        genreP, 
+        descriptionP,
+        priceP, 
+    );
+    return li;
+}
