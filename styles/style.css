@@ -1,32 +1,35 @@
+html {
+    height: 100%;
+  }
+  
+
+body {
+    font-family: 'DotGothic16', sans-serif;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #202020, #111119);
+}
 
 main {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Grenze Gotisch', cursive;
+    color:lightgray;
+    font-size:5em; 
+    margin-top:100px;
+}
+
+a {
+ text-decoration: none;
+ color:lightgray;
+}
+
+content{
+    font-size:2em;
+    font-family: DotGothic16, monospace;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-
-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-header {
-    display: flex;
-    justify-content: flex-end;
-
-}
-
-footer {
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    display: flex;
-    justify-content: flex-end;
-
-}
-  

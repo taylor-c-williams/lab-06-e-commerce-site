@@ -1,5 +1,6 @@
 body {
     font-family: 'DotGothic16', sans-serif;
+    background: linear-gradient(to bottom, #202020, #111119);
 }
 
 main {
@@ -30,6 +31,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
     height:750px;
     box-shadow: -10px 10px 0px 1px #848484;
 }
@@ -44,7 +46,7 @@ li {
 
 .sword h3 {
     font-family: 'Grenze Gotisch', cursive;
-    font-size:2.5em;
+    font-size:3em;
     padding:10px;
     margin:0;
     display: flex;
@@ -64,4 +66,9 @@ button {
     font-size:1em;
     cursor: pointer;
     box-shadow: -5px 5px 0px 1px #848484;
+}
+
+button:hover{
+    background-color:silver;
+    color:white;
 }
