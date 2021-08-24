@@ -1,4 +1,4 @@
-import { findItemById } from '../utils.js';
+import { findById } from '../utils.js';
 import { swords } from '../products/product-data.js';
 
 export function renderTableRow(cartItem){
@@ -8,8 +8,8 @@ export function renderTableRow(cartItem){
     const quantityTd = document.createElement('td');
     const totalTd = document.createElement('td');
 
-    const product = findItemById(swords, cartItem.id);
-    const total = getTotal(product.price, cartItem.quantity);
+    const product = findById(swords, cartItem.id);
+    const total = calcItemTotal(product.price, cartItem.quantity);
 
     nameTd.textContent = product.name;
     priceTd.textContent = product.price;
@@ -20,15 +20,15 @@ export function renderTableRow(cartItem){
     return tr;
 }
 
-function getTotal(price, quantity){
+export function calcItemTotal(price, quantity){
     const total = price * quantity;
     return total;
 }
 
-export function getGrandTotal(allProducts, wholeCart) {
+export function calcOrderTotal(allProducts, wholeCart) {
     let accumulator = 0;
     for (let item of wholeCart){
-        const product = findItemById(allProducts, item.id);
+        const product = findById(allProducts, item.id);
         const total = product.price * item.quantity;
         accumulator = accumulator + total;
     }

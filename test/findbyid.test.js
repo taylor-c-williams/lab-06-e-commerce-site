@@ -1,7 +1,7 @@
 
 
 import { swords } from '../products/product-data.js';
-import { findItemById } from '../utils.js';
+import { findById } from '../utils.js';
 const test = QUnit.test;
 
 test('findById should retrieve data relative to a specified ID', (expect) => {
@@ -18,7 +18,7 @@ test('findById should retrieve data relative to a specified ID', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = findItemById(swords, 5);
+    const actual = findById(swords, 5);
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);

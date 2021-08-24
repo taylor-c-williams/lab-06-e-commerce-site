@@ -1,9 +1,10 @@
 // IMPORT MODULES under test here:
-import { renderTableRow, getGrandTotal } from '../cart/render-table-row.js';
+import { renderTableRow, calcOrderTotal, calcItemTotal } from '../cart/render-table-row.js';
 // import { example } from '../example.js';
 
 const test = QUnit.test;
 
+// renderTableRow
 test('renderTableRow should take in a cart item  and render the correct HTML', (expect) => {
     //Arrange
     // Set up your arguments and expectations
@@ -21,14 +22,32 @@ test('renderTableRow should take in a cart item  and render the correct HTML', (
     expect.equal(actual.outerHTML, expected);
 });
 
-test('getGrandTotal should take in item quantity totals and calculate a grand total', (expect) => {
+//calcItemTotal
+test('calcItemTotal should take in item quantities and calculate a total', (expect) => {
+    //Arrange
+    // Set up your arguments and expectations
+    const expected = 25;
+    
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const actual = calcItemTotal(5, 5);
+
+
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.equal(actual, expected);
+});
+
+// calcOrderTotal
+test('calcOrderTotal should take in item quantity totals and calculate a grand total', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = 24;
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = getGrandTotal([
+    const actual = calcOrderTotal([
         { id: 1, price: 7 },
         { id: 2, price: 2 },
         { id: 3, price: 5 }
