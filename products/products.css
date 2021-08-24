@@ -1,21 +1,26 @@
-body{
+body {
     font-family: 'DotGothic16', sans-serif;
 }
 
-main{
-
+main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-ul{
+.product-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width:500px;
     justify-content: center;
     align-items: center;
-
 }
 
 li {
@@ -25,32 +30,38 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    height:750px;
+    box-shadow: -10px 10px 0px 1px #848484;
 }
 
-
-.sword{
+.sword {
     border:1px dotted black;
     border-radius:10px;
     padding:15px;
-    font-size:1.33em;
+    font-size:1em;
     letter-spacing: .5px;
 }
-.sword h3{
+
+.sword h3 {
     font-family: 'Grenze Gotisch', cursive;
     font-size:2.5em;
     padding:10px;
     margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.sword img{
+.sword img {
     height: 300px;
     width:300px;
 }
 
-.product-div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+button {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: white;
+    border:1px dotted black;
+    font-size:1em;
+    cursor: pointer;
+    box-shadow: -5px 5px 0px 1px #848484;
 }
