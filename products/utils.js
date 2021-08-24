@@ -26,7 +26,7 @@ export function renderSword(sword) {
     addButton.textContent = `Add ${sword.id} to Cart`;              
 
     addButton.addEventListener('click', () => {
-        alert(`You are bound to your ${sword.name} for eternity, and it has been added to your cart.`)
+        alert(`You are bound to your ${sword.name} for eternity, and it has been added to your cart.`);
     });
 
     productDiv.append(genreP, descriptionP, priceP);
