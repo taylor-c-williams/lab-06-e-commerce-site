@@ -1,5 +1,7 @@
 body {
     font-family: 'DotGothic16', sans-serif;
+    height: 100%;
+    margin: 0;
     background: linear-gradient(to bottom, #202020, #111119);
 }
 
