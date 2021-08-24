@@ -25,3 +25,10 @@ table thead {
   font-family:'Grenze Gotisch', cursive;
   font-size: 1.5em;
 }
+
+table tfoot {
+    background-color:lightslategrey;
+    font-family:'Grenze Gotisch', cursive;
+    font-size: 1.5em;
+    border-top:1px dashed;
+  }
