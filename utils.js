@@ -40,7 +40,7 @@ export function renderSword(sword) {
     return li;
 }
 
-export function findById(myArray, id) {
+export function findItemById(myArray, id) {
     for (let item of myArray){
         if (item.id === id) {
             return item;
