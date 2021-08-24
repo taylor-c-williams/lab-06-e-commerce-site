@@ -1,5 +1,5 @@
-import { renderSword } from './utils.js';
-import { swords } from './data.js';
+import { renderSword } from '../utils.js';
+import { swords } from './product-data.js';
 
 const ul = document.getElementById('swords');
 

@@ -1,6 +1,6 @@
 export const swords = [
     {
-        id: 'Katana',
+        id: 1,
         name: 'Katana',
         image: '../assets/katana.jpg',
         genre: 'Two-handed tanto',
@@ -9,7 +9,7 @@ export const swords = [
     },
 
     {
-        id: 'Talwar',
+        id: 2,
         name: 'Talwar',
         image: '../assets/talwar.jpg',
         description: 'The talwar (pronounced [t̪əlʋaːr]), also spelled talwaar and tulwar, is a type of curved sword or sabre from the Indian subcontinent.',
@@ -18,7 +18,7 @@ export const swords = [
     },
 
     {
-        id: 'Claymore',
+        id: 3,
         name: 'Claymore',
         image: '../assets/claymore.jpg',
         description: 'A claymore (/ˈkleɪmɔːr/; from Scottish Gaelic: claidheamh-mòr, "great sword") is characterized as having a cross hilt of forward-sloping quillons with quatrefoil terminations.',
@@ -27,7 +27,7 @@ export const swords = [
     },
 
     {
-        id: 'Rapier',
+        id: 4,
         name: 'Rapier',
         image: '../assets/rapier.jpg',
         description: 'A rapier (/ˈreɪpiər/) or espada ropera is a type of sword with a slender and sharply-pointed two-edged blade.',
@@ -36,7 +36,7 @@ export const swords = [
     },
 
     {
-        id: 'Scimitar',
+        id: 5,
         name: 'Scimitar',
         image: '../assets/scimitar.jpg',
         description: 'A scimitar (/ˈsɪmɪtər/ or /ˈsɪmɪtɑːr/) is a backsword with a convex curved blade',
@@ -45,7 +45,7 @@ export const swords = [
     },    
 
     {
-        id: 'Ancient Sword',
+        id: 6,
         name: 'Ancient Bog Sword',
         image: '../assets/unknown.jpg',
         description: 'A greatsword of unknown origin, reclaimed from a bog. Possibly lost by an ancient warlord, likely cursed.',

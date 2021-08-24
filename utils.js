@@ -23,7 +23,7 @@ export function renderSword(sword) {
     genreP.textContent = `Type: ${sword.genre}`;
     descriptionP.textContent = `Description: ${sword.description}`;
     priceP.textContent = `Cost: ${sword.price}`;
-    addButton.textContent = `Add ${sword.id} to Cart`;              
+    addButton.textContent = `Add ${sword.name} to Cart`;              
 
     addButton.addEventListener('click', () => {
         alert(`You are bound to your ${sword.name} for eternity, and it has been added to your cart.`);
@@ -38,4 +38,12 @@ export function renderSword(sword) {
         addButton,
     );
     return li;
+}
+
+export function findById(myArray, id) {
+    for (let item of myArray){
+        if (item.id === id) {
+            return item;
+        }
+    }
 }
