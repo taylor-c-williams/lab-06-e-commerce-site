@@ -1,6 +1,15 @@
-import { findItemById } from '../utils.js';
 import { cart } from './cart-data.js';
+import { renderTableRow } from './render-table-row.js';
+import { getGrandTotal } from './render-table-row.js';
+import { swords } from '../products/product-data.js';
 
-const test = document.querySelector('#testy');
+const tBody = document.querySelector('tbody');
 
-test.textContent = findItemById(cart, 5);
+for (let item of cart){
+    const tr = renderTableRow(item);
+    tBody.append(tr);
+}
+const grandTotal = getGrandTotal(swords, cart);
+const totalTd = document.querySelector('#grandTotal');
+
+totalTd.textContent = grandTotal;
