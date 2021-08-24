@@ -13,7 +13,7 @@ test('findById should retrieve data relative to a specified ID', (expect) => {
         image: '../assets/scimitar.jpg',
         description: 'A scimitar (/ˈsɪmɪtər/ or /ˈsɪmɪtɑːr/) is a backsword with a convex curved blade',
         genre: 'Single-handed dueling sword',
-        price: '9k gold',
+        price: 9000,
     };
     
     //Act 
