@@ -1,4 +1,4 @@
-import { addToCart } from '../local-storage-utils.js';
+import { addToCart } from './local-storage-utils.js';
 
 export function renderSword(sword) {
     const li = document.createElement('li');
