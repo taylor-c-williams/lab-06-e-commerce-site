@@ -1,6 +1,5 @@
 import { findById } from './utils.js';
 
-
 export function getCart() {
     const stringyCart = localStorage.getItem('CART');    
     if (!stringyCart){

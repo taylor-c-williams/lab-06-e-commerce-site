@@ -1,3 +1,4 @@
+import { addToCart } from '../local-storage-utils.js';
 
 export function renderSword(sword) {
     const li = document.createElement('li');
@@ -26,6 +27,7 @@ export function renderSword(sword) {
     addButton.textContent = `Add ${sword.name} to Cart`;
 
     addButton.addEventListener('click', () => {
+        addToCart(sword.id);
         alert(`You are bound to your ${sword.name} for eternity, and it has been added to your cart.`);
     });
 
