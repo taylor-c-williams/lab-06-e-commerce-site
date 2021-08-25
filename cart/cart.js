@@ -10,10 +10,13 @@ for (let item of cart){
     const tr = renderTableRow(item);
     tBody.append(tr);
 }
-const grandTotal = calcOrderTotal(swords, cart);
-const totalTd = document.querySelector('grandTotal');
+const grandTotal = Number(calcOrderTotal(swords, cart)).toLocaleString();
+const totalTd = document.querySelector('#grandTotal');
 
-totalTd.textContent = grandTotal;
+totalTd.textContent = `${grandTotal} gold`;
 
 
-
+const checkoutButton = document.getElementById('checkout-button');
+checkoutButton.addEventListener('click', () => {
+    alert(`You are bound to your decisions for eternity. No refunds.`);
+});
