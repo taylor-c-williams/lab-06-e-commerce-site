@@ -7,8 +7,8 @@ export function renderTableRow(cartItem){
     const priceTd = document.createElement('td');
     const quantityTd = document.createElement('td');
     const totalTd = document.createElement('td');
-    
-    const checkoutButton = document.getElementById('checkout-button');
+
+    // const checkoutButton = document.getElementById('checkout-button');
 
     const product = findById(swords, cartItem.id);
     const total = calcItemTotal(product.price, cartItem.quantity);
@@ -18,9 +18,9 @@ export function renderTableRow(cartItem){
     quantityTd.textContent = cartItem.quantity;
     totalTd.textContent = total;
 
-    checkoutButton.addEventListener('click', () => {
-        alert(`You are bound to your decisions for eternity. No refunds.`);
-    });
+    // checkoutButton.addEventListener('click', () => {
+    //     alert(`You are bound to your decisions for eternity. No refunds.`);
+    // });
     
 
     tr.append(nameTd, priceTd, quantityTd, totalTd);
