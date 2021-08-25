@@ -1,9 +1,9 @@
-import { cart } from './cart-data.js';
 import { renderTableRow } from './render-table-row.js';
 import { calcOrderTotal } from './render-table-row.js';
 import { swords } from '../products/product-data.js';
 
 const tBody = document.querySelector('tbody');
+const cart = getCart();
 
 
 for (let item of cart){
