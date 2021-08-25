@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Grenze+Gotisch:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../styles/style.css" />
+		<link rel="stylesheet" href="./cart.css" />
+		<title>Taylor's haunted sword emporium</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Grenze+Gotisch:wght@300&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="./cart.css">
-    <title>Taylor's haunted sword emporium</title>
-</head>
-
-<body>
-    <section class="table">
-        <table>
-            <thead>
-                <tr>
-                    <th>Item</th>
-                    <th>Price (Gold)</th>
-                    <th>Quantity</th>
-                    <th>Total (Gold)</th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>Grand Total:</td>
-                    <td></td>
-                    <td></td>
-                    <td id="grandTotal"></td>
-                </tr>
-            </tfoot>
-        </table>
-    </section>
-    <section class="checkout">
-        <button id="checkout-button">Check Out</button>
-    </section>
-    <script type="module" src="./cart.js"></script>
-</body>
-
+	<body>
+		<nav>
+			<button class="cart-button">
+				<a href="../products/index.html">Back to Products</a>
+			</button>
+		</nav>
+		<section class="table">
+			<table>
+				<thead>
+					<tr>
+						<th>Item</th>
+						<th>Price (Gold)</th>
+						<th>Quantity</th>
+						<th>Total (Gold)</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+				<tfoot>
+					<tr>
+						<td>Grand Total:</td>
+						<td></td>
+						<td></td>
+						<td id="grandTotal"></td>
+					</tr>
+				</tfoot>
+			</table>
+		</section>
+		<section class="checkout">
+			<button id="checkout-button">Check Out</button>
+		</section>
+		<script type="module" src="./cart.js"></script>
+	</body>
 </html>

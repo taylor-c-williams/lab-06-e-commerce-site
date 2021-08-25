@@ -8,7 +8,7 @@ export function renderSword(sword) {
     const descriptionP = document.createElement('p');
     const priceP = document.createElement('p');
     const addButton = document.createElement('button');
-  
+
     li.classList.add('sword');
     h3.classList.add('name');
     img.classList.add('image');
@@ -22,8 +22,8 @@ export function renderSword(sword) {
     img.src = sword.image;
     genreP.textContent = `Type: ${sword.genre}`;
     descriptionP.textContent = `Description: ${sword.description}`;
-    priceP.textContent = `Cost: ${sword.price}`;
-    addButton.textContent = `Add ${sword.name} to Cart`;              
+    priceP.textContent = `Cost: ${Number(sword.price).toLocaleString()} gold`;
+    addButton.textContent = `Add ${sword.name} to Cart`;
 
     addButton.addEventListener('click', () => {
         alert(`You are bound to your ${sword.name} for eternity, and it has been added to your cart.`);
@@ -32,8 +32,8 @@ export function renderSword(sword) {
     productDiv.append(genreP, descriptionP, priceP);
 
     li.append(
-        h3, 
-        img, 
+        h3,
+        img,
         productDiv,
         addButton,
     );
@@ -41,7 +41,7 @@ export function renderSword(sword) {
 }
 
 export function findById(myArray, id) {
-    for (let item of myArray){
+    for (let item of myArray) {
         if (item.id === id) {
             return item;
         }

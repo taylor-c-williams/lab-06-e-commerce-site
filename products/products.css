@@ -1,95 +1,116 @@
 body {
-    font-family: 'DotGothic16', sans-serif;
-    height: 100%;
-    margin: 0;
-    background: linear-gradient(to bottom, #202020, #111119);
+	font-family: "DotGothic16", sans-serif;
+	height: 100%;
+	margin: 0;
+	background: linear-gradient(to bottom, #202020, #111119);
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.product-div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.product-div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
-.products-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
+.product-div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
-.products-nav:active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+}
+
+nav:active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
 }
 
 ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width:500px;
-    justify-content: center;
-    align-items: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 500px;
+	justify-content: center;
+	align-items: center;
 }
 
 li {
-    list-style:none;
-    margin:20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    height:750px;
-    box-shadow: -10px 10px 0px 1px #848484;
+	list-style: none;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	height: 750px;
+	box-shadow: -10px 10px 0px 1px #848484;
 }
 
 a:link {
-    text-decoration: none;
-    color:black;
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: white;
 }
 
 .sword {
-    border:1px dotted black;
-    border-radius:10px;
-    padding:15px;
-    font-size:1em;
-    letter-spacing: .5px;
+	border: 1px dotted black;
+	border-radius: 10px;
+	padding: 15px;
+	font-size: 1em;
+	letter-spacing: 0.5px;
 }
 
 .sword h3 {
-    font-family: 'Grenze Gotisch', cursive;
-    font-size:3em;
-    padding:10px;
-    margin:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	font-family: "Grenze Gotisch", cursive;
+	font-size: 3em;
+	padding: 10px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .sword img {
-    height: 300px;
-    width:300px;
+	height: 300px;
+	width: 300px;
 }
 
 button {
-    font-family: 'DotGothic16', sans-serif;
-    background-color: white;
-    border:1px dotted black;
-    font-size:1em;
-    cursor: pointer;
-    box-shadow: -5px 5px 0px 1px #848484;
+	font-family: "DotGothic16", sans-serif;
+	background-color: white;
+	border: 1px dotted black;
+	font-size: 1em;
+	cursor: pointer;
+	box-shadow: -5px 5px 0px 1px #848484;
 }
 
-button:hover{
-    background-color:silver;
-    color:white;
+button:hover {
+	background-color: silver;
+	color: white;
+}
+
+button:active {
+	font-family: "DotGothic16", sans-serif;
+	background-color: #4a4140;
+	color: white;
+	border: 1px dotted black;
+	font-size: 1em;
+	cursor: pointer;
+	box-shadow: 5px 5px 0px 1px #848484;
 }
