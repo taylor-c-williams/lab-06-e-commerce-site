@@ -18,6 +18,6 @@ totalTd.textContent = `${grandTotal} gold`;
 
 const checkoutButton = document.getElementById('checkout-button');
 checkoutButton.addEventListener('click', () => {
-    alert(`You are bound to your decisions for eternity. No refunds.`);
+    alert(`You are bound to your choices for eternity. No refunds.`);
 });
 
