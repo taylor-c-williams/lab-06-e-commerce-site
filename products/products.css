@@ -18,6 +18,13 @@ main {
     align-items: center;
 }
 
+.products-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
 ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -36,6 +43,10 @@ li {
     background-color: white;
     height:750px;
     box-shadow: -10px 10px 0px 1px #848484;
+}
+
+a {
+    text-decoration: none;
 }
 
 .sword {

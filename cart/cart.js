@@ -20,3 +20,4 @@ const checkoutButton = document.getElementById('checkout-button');
 checkoutButton.addEventListener('click', () => {
     alert(`You are bound to your decisions for eternity. No refunds.`);
 });
+
