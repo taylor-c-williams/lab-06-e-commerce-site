@@ -9,10 +9,11 @@ export function renderTableRow(cartItem){
     const totalTd = document.createElement('td');
 
     const product = findById(swords, cartItem.id);
-    const total = calcItemTotal(product.price, cartItem.quantity);
+    const productPrice = Number(product.price).toLocaleString();
+    const total = Number(calcItemTotal(product.price, cartItem.quantity)).toLocaleString();
 
     nameTd.textContent = product.name;
-    priceTd.textContent = product.price;
+    priceTd.textContent = productPrice;
     quantityTd.textContent = cartItem.quantity;
     totalTd.textContent = total;
    
