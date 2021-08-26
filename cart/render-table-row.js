@@ -1,4 +1,4 @@
-import { findById } from '../utils.js';
+import { findById } from '../render-product-utils.js';
 import { swords } from '../products/product-data.js';
 
 export function renderTableRow(cartItem){

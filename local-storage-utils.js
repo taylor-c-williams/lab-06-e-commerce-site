@@ -1,4 +1,4 @@
-import { findById } from './utils.js';
+import { findById } from './render-product-utils.js';
 
 export function getCart() {
     const stringyCart = localStorage.getItem('CART');    
