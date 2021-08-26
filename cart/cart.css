@@ -2,13 +2,21 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 200px;
+	margin-top: 100px;
+	position: relative;
+	z-index: 2;
 }
 
 .checkout {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top:10px;
+}
+
+.checkout button{
+	height:50px;
+	width:125px;
 }
 
 a:link {
@@ -29,6 +37,8 @@ button {
 	font-size: 1em;
 	cursor: pointer;
 	box-shadow: -5px 5px 0px 1px #848484;
+	position: relative;
+	z-index: 2;
 }
 
 button:hover {

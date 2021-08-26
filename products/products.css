@@ -3,12 +3,15 @@ body {
 	height: 100%;
 	margin: 0;
 	background: linear-gradient(to bottom, #202020, #111119);
+
 }
 
 main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	z-index: 2;
 }
 
 .product-div {
@@ -98,6 +101,8 @@ button {
 	font-size: 1em;
 	cursor: pointer;
 	box-shadow: -5px 5px 0px 1px #848484;
+	position: relative;
+	z-index: 2;
 }
 
 button:hover {
