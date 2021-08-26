@@ -8,7 +8,7 @@ const test = QUnit.test;
 test('renderTableRow should take in a cart item  and render the correct HTML', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = `<tr><td>Katana</td><td>10000</td><td>2</td><td>20000</td></tr>`;
+    const expected = `<tr><td>Katana</td><td>10,000</td><td>2</td><td>20,000</td></tr>`;
     
     //Act 
     // Call the function you're testing and set the result to a const
