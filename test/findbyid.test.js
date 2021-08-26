@@ -1,7 +1,7 @@
 
 
 import { swords } from '../products/product-data.js';
-import { findById } from '../utils.js';
+import { findById } from '../render-product-utils.js';
 const test = QUnit.test;
 
 test('findById should retrieve data relative to a specified ID', (expect) => {
