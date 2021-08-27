@@ -22,7 +22,39 @@ main {
 
 a {
  text-decoration: none;
- color:lightgray;
+ color:black;
+}
+
+main.splash a{
+    text-decoration: none;
+    color:lightgrey;
+}
+
+content.splash a{
+    text-decoration: none;
+    color: lightgrey;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+}
+
+nav:active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+}
+
+nav:visited {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+	color:black;
 }
 
 content {
@@ -33,7 +65,7 @@ content {
     align-items: center;
 }
 
- .admin{
+ .admin {
     position: relative;
     flex-direction: column;
     justify-content:stretch;
@@ -48,20 +80,21 @@ content {
 	height: 500px;
 	width:500px;
 	box-shadow: -10px 10px 0px 1px #848484;
+    margin:30px;
 }
 
-h2{
+h2 {
     font-family: 'Grenze Gotisch', cursive;
     font-size: 3em;
     margin:20px;    
 }
 
-input{
+input {
     border:dotted 1px black;
     font-family: "DotGothic16", sans-serif;
 }
 
-label{
+label {
     display: grid;
     grid-template-columns: .75fr 1fr;
     margin:15px;
@@ -76,7 +109,7 @@ button {
 	box-shadow: -5px 5px 0px 1px #848484;
 	position: relative;
 	z-index: 2;
-    margin-top:20px;
+    margin:20px;
 }
 
 button:hover {

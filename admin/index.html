@@ -9,25 +9,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Grenze+Gotisch:wght@300&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="../products/products.css" />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/rain.css" />
-    >
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <title>Taylor's Haunted Sword Emporium</title>
 </head>
-
 <body>
     <div class="weather rain">
+        <nav>
+            <button class="cart-button">
+                <a href="../cart/index.html">View Cart</a>
+            </button>
+            <button>
+                <a href="../products">Back to Products</a>
+            </button>
+        </nav>
         <content>
             <content class="admin">
                 <h2>Add New Product</h2>
                 <form id="add-new-form">
-                    <!-- id: 2,
-            name: 'Talwar',
-            image: '../assets/talwar.jpg',
-            description: 'The talwar (pronounced [t̪əlʋaːr]), also spelled talwaar and tulwar, is a type of curved sword or sabre from the Indian subcontinent.',
-            genre: 'Single-handed sabre',
-            price: 15000 -->
                     <label>
                         I.D. #
                         <input required name="id" type="number" />
