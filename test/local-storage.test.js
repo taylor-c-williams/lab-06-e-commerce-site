@@ -1,26 +1,25 @@
-import { addProduct, getProducts } from '../local-storage-utils.js';
+import { setProducts, addProduct, getProducts } from '../local-storage-utils.js';
 
 const test = QUnit.test;
 
 //setProducts
 
-// test('setProducts should set an array in local storage', (expect) => {
+test('setProducts should set an array in local storage', (expect) => {
     
-//     const products = [
-//         { id:4, quantity:34 },
-//         { id:6, quantity:56 }
-//     ];    
+    const products = [
+        { id:4, quantity:34 },
+        { id:6, quantity:56 }
+    ];    
 
-//     const actual = setProducts(products);   
-
-//     const stringyProduct = localStorage.getItem('PRODUCTS');
-//     const unstrungProduct = JSON.parse(stringyProduct);
+    setProducts(products);  
+    const stringyProduct = localStorage.getItem('PRODUCTS');
+    const unstrungProduct = JSON.parse(stringyProduct);
  
-//     //Expect
-//     const expected = unstrungProduct;
-//     // Make assertions about what is expected versus the actual result
-//     expect.deepEqual(actual, expected);
-// });
+    const expected = products;
+    const actual = unstrungProduct;
+    // Make assertions about what is expected versus the actual result
+    expect.deepEqual(actual, expected);
+});
 
 
 // getProducts
@@ -35,21 +34,15 @@ test('getProducts should return a products array that is stored in local', (expe
         price: 10000
     }];    
 
-    //Arrange
-    // Set up your arguments and expectations
     const stringyProduct = JSON.stringify(product);
     localStorage.setItem('PRODUCTS', stringyProduct);
-    
-    //Act 
-    // Call the function you're testing and set the result to a const
+
     const actual = getProducts();
-    //Expect
-    // Make assertions about what is expected versus the actual result
+
     expect.deepEqual(actual, product);
 });
 
 //addProduct
-
 test('addProduct should add an object into an array in local storage', (expect) => {
     
     const newProduct = {
