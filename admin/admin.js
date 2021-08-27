@@ -14,4 +14,6 @@ form.addEventListener('submit', (event) =>{
         price: data.get('price'),
     };
     addProduct(newProduct);
+    form.reset(); 
+    alert(`Your items have been added to the inventory for eternity`);
 }); 
