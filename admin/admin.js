@@ -14,5 +14,4 @@ form.addEventListener('submit', (event) =>{
         price: data.get('price'),
     };
     addProduct(newProduct);
-    
 }); 
