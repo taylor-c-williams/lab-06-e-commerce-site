@@ -1,64 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Grenze+Gotisch:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../products/products.css" />
+		<link rel="stylesheet" href="../styles/style.css" />
+		<link rel="stylesheet" href="../styles/rain.css" />
+		<link rel="icon" href="./favicon.ico" type="image/x-icon" />
+		<title>Taylor's Haunted Sword Emporium</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Grenze+Gotisch:wght@300&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="../products/products.css" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/rain.css" />
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-    <title>Taylor's Haunted Sword Emporium</title>
-</head>
-<body>
-    <div class="weather rain">
-        <nav>
-            <button class="cart-button">
-                <a href="../cart/index.html">View Cart</a>
-            </button>
-            <button>
-                <a href="../products">Back to Products</a>
-            </button>
-        </nav>
-        <content>
-            <content class="admin">
-                <h2>Add New Product</h2>
-                <form id="add-new-product">
-                    <label>
-                        I.D. #
-                        <input required name="id" type="number" />
-                    </label>
-                    <label>
-                        Item Name
-                        <input required name="name" />
-                    </label>
-                    <label>
-                        Image URL
-                        <input required name="image" />
-                    </label>
-                    <label>
-                        Description
-                        <input required name="description" />
-                    </label>
-                    <label>
-                        Type
-                        <input required name="genre" />
-                    </label>
-                    <label>
-                        Price
-                        <input required name="price" type="number" />
-                    </label>
-                    <button>Add to Inventory</button>
-                </form>
-            </content>
-        </content>
-    </div>
-    <script type="module" src="./admin.js"></script>
-</body>
-
+	<body>
+		<div class="weather rain">
+			<nav>
+				<button class="cart-button">
+					<a href="../cart/index.html">View Cart</a>
+				</button>
+				<button>
+					<a href="../products">Back to Products</a>
+				</button>
+			</nav>
+			<content>
+				<content class="admin">
+					<h2>Add New Product</h2>
+					<form id="add-new-product">
+						<label>
+							I.D. #
+							<input required name="id" type="number" />
+						</label>
+						<label>
+							Item Name
+							<input required name="name" />
+						</label>
+						<label>
+							Image URL
+							<input required name="image" />
+						</label>
+						<label>
+							Description
+							<input required name="description" />
+						</label>
+						<label>
+							Type
+							<input required name="genre" />
+						</label>
+						<label>
+							Price
+							<input required name="price" type="number" />
+						</label>
+						<button>Add to Inventory</button>
+					</form>
+				</content>
+			</content>
+		</div>
+		<script type="module" src="./admin.js"></script>
+	</body>
 </html>

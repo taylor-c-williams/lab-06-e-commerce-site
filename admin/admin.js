@@ -13,7 +13,6 @@ form.addEventListener('submit', (event) =>{
         genre: data.get('genre'),
         price: data.get('price'),
     };
-
     addProduct(newProduct);
     
 }); 
