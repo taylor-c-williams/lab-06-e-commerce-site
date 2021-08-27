@@ -51,36 +51,23 @@ test('getProducts should return a products array that is stored in local', (expe
 //addProduct
 
 test('addProduct should add an object into an array in local storage', (expect) => {
-    const productsBefore = [
-        {
-            id: 2,
-            quantity: 3,
-        },
-        {
-            id: 5,
-            quantity: 1,
-        }
-    ];
+    
+    const newProduct = {
+        id: ('id'),
+        name: ('name'),
+        image: ('image'),
+        description: ('description'),
+        genre: ('genre'),
+        price: ('price'),
+    };
 
-    const productsAfter = [
-        {
-            id: 2,
-            quantity: 3,
-        },
-        {
-            id: 5,
-            quantity: 2,
-        }
-    ];
-    const stringyProduct = JSON.stringify(productsBefore);
-    localStorage.setItem('PRODUCTS', stringyProduct);
+    addProduct(newProduct);
 
-    addProduct(5, 1);
-
-    const stringyProductsAfter = localStorage.getItem('PRODUCTS');
-    const actual = JSON.parse(stringyProductsAfter);
-
-    expect.deepEqual(actual, productsAfter);
+    const strung = localStorage.getItem('PRODUCTS');
+    const unstrung = JSON.parse(strung);
+    const actual = unstrung;
+    const expected = newProduct;
+    expect.deepEqual(actual, expected);
 });
 
 
