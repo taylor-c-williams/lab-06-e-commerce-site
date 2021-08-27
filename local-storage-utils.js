@@ -35,8 +35,8 @@ export function clearCart(){
 }
 
 export function setProducts(productsArray){
-    const stringyProducts = JSON.stringify(productsArray);
-    localStorage.setItem('PRODUCTS', stringyProducts);
+    const stringyProduct = JSON.stringify(productsArray);
+    localStorage.setItem('PRODUCTS', stringyProduct);
 }
 
 export function getProducts(){

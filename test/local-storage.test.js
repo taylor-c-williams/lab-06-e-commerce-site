@@ -1,8 +1,29 @@
-import { getProducts } from '../local-storage-utils.js';
+import { addProduct, getProducts } from '../local-storage-utils.js';
 
 const test = QUnit.test;
 
-// renderTableRow
+//setProducts
+
+// test('setProducts should set an array in local storage', (expect) => {
+    
+//     const products = [
+//         { id:4, quantity:34 },
+//         { id:6, quantity:56 }
+//     ];    
+
+//     const actual = setProducts(products);   
+
+//     const stringyProduct = localStorage.getItem('PRODUCTS');
+//     const unstrungProduct = JSON.parse(stringyProduct);
+ 
+//     //Expect
+//     const expected = unstrungProduct;
+//     // Make assertions about what is expected versus the actual result
+//     expect.deepEqual(actual, expected);
+// });
+
+
+// getProducts
 test('getProducts should return a products array that is stored in local', (expect) => {
     
     const product = [{
@@ -26,3 +47,40 @@ test('getProducts should return a products array that is stored in local', (expe
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, product);
 });
+
+//addProduct
+
+test('addProduct should add an object into an array in local storage', (expect) => {
+    const productsBefore = [
+        {
+            id: 2,
+            quantity: 3,
+        },
+        {
+            id: 5,
+            quantity: 1,
+        }
+    ];
+
+    const productsAfter = [
+        {
+            id: 2,
+            quantity: 3,
+        },
+        {
+            id: 5,
+            quantity: 2,
+        }
+    ];
+    const stringyProduct = JSON.stringify(productsBefore);
+    localStorage.setItem('PRODUCTS', stringyProduct);
+
+    addProduct(5, 1);
+
+    const stringyProductsAfter = localStorage.getItem('PRODUCTS');
+    const actual = JSON.parse(stringyProductsAfter);
+
+    expect.deepEqual(actual, productsAfter);
+});
+
+
