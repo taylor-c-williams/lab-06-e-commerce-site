@@ -33,3 +33,24 @@ export function clearCart(){
     localStorage.removeItem('CART');
     window.location = '../index.html';
 }
+
+export function setProducts(productsArray){
+    const stringyProducts = JSON.stringify(productsArray);
+    localStorage.setItem('PRODUCTS', stringyProducts);
+}
+
+export function getProducts(){
+    const stringyProduct = localStorage.getItem('PRODUCTS');    
+    if (!stringyProduct){
+        return [];
+    }
+    const finalProduct = JSON.parse(stringyProduct);
+    return finalProduct;
+}
+
+export function addProduct(newProduct){
+    const products = getProducts();
+    products.push(newProduct);
+    setProducts(newProduct);
+}
+
