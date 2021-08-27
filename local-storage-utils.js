@@ -1,4 +1,8 @@
 import { findById } from './render-product-utils.js';
+import { swords } from './products/product-data.js';
+
+export const PRODUCTS = 'PRODUCTS';
+export const CART = 'CART';
 
 export function getCart() {
     const stringyCart = localStorage.getItem('CART');    
@@ -33,3 +37,24 @@ export function clearCart(){
     localStorage.removeItem('CART');
     window.location = '../index.html';
 }
+
+export function setProducts(productsArray){
+    const stringyProduct = JSON.stringify(productsArray);
+    localStorage.setItem(PRODUCTS, stringyProduct);
+}
+
+export function getProducts(){
+    const stringyProduct = localStorage.getItem(PRODUCTS);    
+    if (!stringyProduct){
+        return swords;
+    }
+    const finalProduct = JSON.parse(stringyProduct);
+    return finalProduct;
+}
+
+export function addProduct(newProduct){
+    const products = getProducts();
+    products.push(newProduct);
+    setProducts(newProduct);
+}
+

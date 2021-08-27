@@ -1,5 +1,6 @@
 // IMPORT MODULES under test here:
 import { renderSword } from '../render-product-utils.js';
+// import { addToCart } from '../local-storage-utils.js';
 // import { example } from '../example.js';
 
 const test = QUnit.test;
@@ -24,5 +25,3 @@ test('renderSword should take in a sword and render the correct HTML', (expect) 
     // Make assertions about what is expected versus the actual result
     expect.equal(actual.outerHTML, expected);
 });
-
-

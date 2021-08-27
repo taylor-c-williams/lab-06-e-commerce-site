@@ -3,7 +3,6 @@ body {
 	height: 100%;
 	margin: 0;
 	background: linear-gradient(to bottom, #202020, #111119);
-
 }
 
 main {
@@ -12,13 +11,6 @@ main {
 	align-items: center;
 	position: relative;
 	z-index: 2;
-}
-
-.product-div {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
 }
 
 .product-div {
@@ -40,6 +32,14 @@ nav:active {
 	justify-content: center;
 	align-items: center;
 	margin-top: 25px;
+}
+
+nav:visited {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+	color:black;
 }
 
 ul {
@@ -103,6 +103,7 @@ button {
 	box-shadow: -5px 5px 0px 1px #848484;
 	position: relative;
 	z-index: 2;
+	margin: 20px;
 }
 
 button:hover {
@@ -119,3 +120,4 @@ button:active {
 	cursor: pointer;
 	box-shadow: 5px 5px 0px 1px #848484;
 }
+
