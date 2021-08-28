@@ -16,4 +16,5 @@ form.addEventListener('submit', (event) =>{
     addProduct(newProduct);
     form.reset(); 
     alert(`Your items have been added to the inventory for eternity`);
+    window.location.href = '../products/index.html';
 }); 

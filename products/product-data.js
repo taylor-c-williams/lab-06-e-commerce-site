@@ -53,3 +53,6 @@ export const swords = [
         price: 250000
     }   
 ];
+
+const stringySwords = JSON.stringify(swords);
+localStorage.setItem('SWORDS', stringySwords);

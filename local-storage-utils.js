@@ -40,21 +40,32 @@ export function clearCart(){
 
 export function setProducts(productsArray){
     const stringyProduct = JSON.stringify(productsArray);
-    localStorage.setItem(PRODUCTS, stringyProduct);
+    localStorage.setItem('SWORDS', stringyProduct);
 }
 
 export function getProducts(){
-    const stringyProduct = localStorage.getItem(PRODUCTS);    
+    const stringyProduct = localStorage.getItem('SWORDS');    
     if (!stringyProduct){
-        return swords;
+        return [];
     }
     const finalProduct = JSON.parse(stringyProduct);
     return finalProduct;
 }
 
+// export function addProduct(newProduct){
+//     swords.push(newProduct);
+//     setProducts(newProduct);
+// }
+
 export function addProduct(newProduct){
     const products = getProducts();
-    products.push;
-    setProducts(newProduct);
+    const productInInventory = findById(swords);
+    if (productInInventory){
+        alert(`This item is already in inventory.`);
+    } else {
+        products.push(newProduct);
+        setProducts(newProduct);
+    }
+
 }
 
