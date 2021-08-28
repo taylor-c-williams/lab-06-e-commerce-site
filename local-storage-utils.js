@@ -54,7 +54,7 @@ export function getProducts(){
 
 export function addProduct(newProduct){
     const products = getProducts();
-    products.push(newProduct);
+    products.push;
     setProducts(newProduct);
 }
 
