@@ -11,8 +11,8 @@ form.addEventListener('submit', (event) =>{
         image: data.get('image'),
         description: data.get('description'),
         genre: data.get('genre'),
-        price: data.get('price'),
-    }];
+        price: data.get('price') }
+    ];
     addProduct(newProduct);
     form.reset(); 
     alert(`Your items have been added to the inventory for eternity`);
