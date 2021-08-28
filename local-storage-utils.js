@@ -57,15 +57,22 @@ export function getProducts(){
 //     setProducts(newProduct);
 // }
 
+// export function addProduct(newProduct){
+//     const products = getProducts();
+//     const productInInventory = findById(swords);
+//     if (productInInventory){
+//         alert(`This item is already in inventory.`);
+//     } else {
+//         products.push(newProduct);
+//         setProducts(newProduct);
+//     }
+
 export function addProduct(newProduct){
-    const products = getProducts();
-    const productInInventory = findById(swords);
-    if (productInInventory){
-        alert(`This item is already in inventory.`);
-    } else {
-        products.push(newProduct);
-        setProducts(newProduct);
+    swords.push(newProduct);
+    const stringyProduct = JSON.stringify(swords);
+    localStorage.setItem('SWORDS', stringyProduct);
+      
     }
 
-}
+
 
