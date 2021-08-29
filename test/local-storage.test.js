@@ -12,11 +12,12 @@ test('setProducts should set an array in local storage', (expect) => {
     ];    
 
     setProducts(products);  
-    const stringyProduct = localStorage.getItem('PRODUCTS');
+    const stringyProduct = localStorage.getItem('SWORDS');
     const unstrungProduct = JSON.parse(stringyProduct);
  
     const expected = products;
     const actual = unstrungProduct;
+
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);
 });
