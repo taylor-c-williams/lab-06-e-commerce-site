@@ -28,7 +28,7 @@ test('setProducts should set an array in local storage', (expect) => {
 test('getProducts should return a products array that is stored in local', (expect) => {
     
     const product = [{
-        id: 1,
+        id: 5,
         name: 'Katana',
         image: '../assets/katana.jpg',
         genre: 'Two-handed tanto',
@@ -40,17 +40,7 @@ test('getProducts should return a products array that is stored in local', (expe
     localStorage.setItem('PRODUCTS', stringyProduct);
 
     const actual = getProducts('PRODUCTS');
-    const expected = ` 
-    [
-      {
-        "description": "A katana (刀 or かたな) is a Japanese sword characterized by a curved, single-edged blade with a circular or squared guard and long grip to accommodate two hands.",
-        "genre": "Two-handed tanto",
-        "id": 1,
-        "image": "../assets/katana.jpg",
-        "name": "Katana",
-        "price": 10000
-      }
-    ]`
+    const expected = product;
 
     expect.deepEqual(actual, expected);
 });
@@ -69,10 +59,10 @@ test('addProduct should add an object into an array in local storage', (expect) 
 
     addProduct(newProduct);
 
-    const strung = localStorage.getItem('PRODUCTS');
+    const strung = localStorage.getItem('SWORDS');
     const unstrung = JSON.parse(strung);
     const actual = unstrung;
-    const expected = newProduct;
+    const expected = swords
     expect.deepEqual(actual, expected);
 });
 
