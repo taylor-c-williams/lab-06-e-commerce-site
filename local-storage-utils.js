@@ -56,6 +56,10 @@ export function addProduct(newProduct){
     swords.push(newProduct);
     const stringyProduct = JSON.stringify(swords);
     localStorage.setItem('SWORDS', stringyProduct);
+    // window.location.href = "../products/index.html";
+    setTimeout(function(){
+        location.href = "../products/indegix.html";
+     },100)
        }
 
 
