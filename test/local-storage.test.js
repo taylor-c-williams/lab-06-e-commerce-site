@@ -1,4 +1,5 @@
 import { setProducts, addProduct, getProducts } from '../local-storage-utils.js';
+import { swords } from '../products/product-data.js'
 
 const test = QUnit.test;
 
@@ -38,9 +39,20 @@ test('getProducts should return a products array that is stored in local', (expe
     const stringyProduct = JSON.stringify(product);
     localStorage.setItem('PRODUCTS', stringyProduct);
 
-    const actual = getProducts();
+    const actual = getProducts('PRODUCTS');
+    const expected = ` 
+    [
+      {
+        "description": "A katana (刀 or かたな) is a Japanese sword characterized by a curved, single-edged blade with a circular or squared guard and long grip to accommodate two hands.",
+        "genre": "Two-handed tanto",
+        "id": 1,
+        "image": "../assets/katana.jpg",
+        "name": "Katana",
+        "price": 10000
+      }
+    ]`
 
-    expect.deepEqual(actual, product);
+    expect.deepEqual(actual, expected);
 });
 
 //addProduct

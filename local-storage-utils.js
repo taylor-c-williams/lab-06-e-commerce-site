@@ -43,8 +43,8 @@ export function setProducts(productsArray){
     localStorage.setItem('SWORDS', stringyProduct);
 }
 
-export function getProducts(){
-    const stringyProduct = localStorage.getItem('SWORDS');    
+export function getProducts(productArray){
+    const stringyProduct = localStorage.getItem(productArray);    
     if (!stringyProduct){
         return [];
     }
