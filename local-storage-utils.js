@@ -31,9 +31,9 @@ export function addToCart(someId){
 }
 
 export function clearCart(){
-    const cart = getCart();
-    const stringyCart = JSON.stringify(cart, true, 2);
-    alert(stringyCart);
+    // const cart = getCart();
+    // const stringyCart = JSON.stringify(cart, true, 2);
+    alert('Thank you for shopping with the Haunted Sword Emporium!');
     localStorage.removeItem('CART');
     window.location = '../index.html';
 }
